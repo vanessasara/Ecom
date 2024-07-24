@@ -31,42 +31,42 @@ const LoginCard: React.FC<LoginCardProps> = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
-      <div className="bg-black bg-opacity-50 absolute inset-0" onClick={onClose}></div>
-      <div className="bg-white p-6 rounded shadow-lg relative z-10">
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-          {!isLogin && (
-            <Input
-              type="text"
-              placeholder="Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="p-2 border rounded"
-            />
-          )}
+    <div className="bg-black bg-opacity-50 absolute inset-0" onClick={onClose}></div>
+    <div className="bg-white p-10 rounded-lg shadow-xl relative z-10 min-w-20  max-h-full">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+        {!isLogin && (
           <Input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            type="text"
+            placeholder="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             className="p-2 border rounded"
           />
-          <Input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="p-2 border rounded"
-          />
-          <Button type="submit">
-             Log In with Google
-          </Button>
-    
-          <Button  onClick={onClose}>
-            Close
-          </Button>
-        </form>
-      </div>
+        )}
+        <Input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="p-2 border rounded"
+        />
+        <Input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className="p-2 border rounded"
+        />
+        <Button type="submit">
+          Log In with Google
+        </Button>
+        <Button onClick={onClose}>
+          Close
+        </Button>
+      </form>
     </div>
+  </div>
+  
   );
 };
 
