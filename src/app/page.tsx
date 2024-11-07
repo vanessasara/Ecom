@@ -11,7 +11,7 @@ const Home: React.FC = () => {
 
 
   return (
-    <div>
+    <div className='hidden-x-clip'>
       <Suspense fallback={<Skeleton className="h-64 w-full" />}>
         <Slider />
       </Suspense>
