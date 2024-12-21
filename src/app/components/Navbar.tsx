@@ -44,10 +44,10 @@ const Navbar: React.FC = () => {
           </Link>
           <div className="hidden xl:flex gap-4">
             <Link href="/">Homepage</Link>
-            <Link href="/">Shop</Link>
-            <Link href="/">Men</Link>
-            <Link href="/">Female</Link>
-            <Link href="/">Accessories</Link>
+            <Link href="/list">Shop</Link>
+            <Link href="/list">Men</Link>
+            <Link href="/list">Female</Link>
+            <Link href="/list">Accessories</Link>
           </div>
         </div>
         {/* RIGHT */}
