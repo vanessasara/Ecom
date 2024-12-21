@@ -43,11 +43,20 @@ const Navbar: React.FC = () => {
             <div className="text-2xl tracking-wide cursor-pointer">SARAH</div>
           </Link>
           <div className="hidden xl:flex gap-4">
-            <Link href="/">Homepage</Link>
-            <Link href="/list">Shop</Link>
-            <Link href="/list">Men</Link>
-            <Link href="/list">Female</Link>
-            <Link href="/list">Accessories</Link>
+            <Link href="/">
+              <button>Homepage</button></Link>
+            <Link href="/list">
+            <button>Shop</button>
+            </Link>
+            <Link href="/list">
+            <button>Men</button>
+            </Link>
+            <Link href="/list">
+            <button>Women</button>
+            </Link>
+            <Link href="/list">
+            <button>Accessories</button>
+            </Link>
           </div>
         </div>
         {/* RIGHT */}
